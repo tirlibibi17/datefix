@@ -30,11 +30,11 @@ Grab the binary from the release to the right. There are two binaries built with
 
 **Note**: in all the command-lines below, replace `python fix_dates.py` with `fix_dates` if you're using a binary.
 
-Basic (interactive):
+Basic (interactive - you can use the provided example.csv file for testing):
 
-    python fix_dates.py input.csv
+    python fix_dates.py example.csv
 
-Output will be written to `input_iso.csv` by default.
+Output will be written to `example_iso.csv` by default.
 
     usage: fix_dates.py [-h] [-o OUTPUT] [--encoding ENCODING]
                         [--sample-rows SAMPLE_ROWS]
