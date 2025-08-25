@@ -20,7 +20,7 @@ A Python CLI tool to **normalize date columns in CSV files to ISO-8601 format** 
 
 ### Option 1 (quickest): run a binary
 
-Grab the binary from the release to the right. There are two binaries built with two different utilities (pyinstaller and nuitka). If one trips your antivirus (e.g. the nuitka one tripped Symantec on my work PC), try the other.
+Grab the binary from the release to the right. There are two binaries built with two different utilities (pyinstaller and nuitka). If one trips your antivirus (e.g. the nuitka one tripped Symantec on my work PC), try the other. I assure you both are clean, but don't trust a stranger obviously.
 
 ### Option 2: download fix_dates.py from the release and install dependencies
 
