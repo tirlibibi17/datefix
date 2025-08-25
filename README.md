@@ -24,3 +24,28 @@ Clone the repo and install dependencies:
 git clone https://github.com/yourname/csv-date-normalizer.git
 cd csv-date-normalizer
 pip install -r requirements.txt
+
+## 🚀 Usage
+
+Basic (interactive):
+
+python csv_dates_to_iso.py input.csv
+
+Output will be written to input_iso.csv by default.
+
+Options
+
+    usage: csv_dates_to_iso.py [-h] [-o OUTPUT] [--encoding ENCODING]
+                               [--sample-rows SAMPLE_ROWS]
+                               [--no-prompt] [--assume {DMY,MDY,YMD}]
+                               [--force-order {DMY,MDY,YMD}]
+                               input
+
+
+    input → Path to CSV file
+    -o, --output → Output file (default: input_iso.csv)
+    --encoding → Input file encoding (default: utf-8)
+    --sample-rows → Number of rows to sample for detection (default: 200)
+    --no-prompt → Disable interactive prompts
+    --assume → Fallback order when ambiguous (requires --no-prompt)
+    --force-order → Force order for all date columns
