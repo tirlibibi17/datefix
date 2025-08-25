@@ -28,6 +28,8 @@ Grab the binary from the release to the right. There are two binaries built with
 
 ## 🚀 Usage
 
+**Note**: in all the command-lines below, replace `python fix_dates.py` with `fix_dates` if you're using a binary.
+
 Basic (interactive):
 
     python fix_dates.py input.csv
