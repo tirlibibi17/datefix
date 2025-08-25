@@ -46,3 +46,35 @@ Output will be written to `input_iso.csv` by default.
     --no-prompt → Disable interactive prompts
     --assume → Fallback order when ambiguous (requires --no-prompt)
     --force-order → Force order for all date columns
+
+
+### Examples
+
+Interactive (asks if ambiguous):
+
+    python csv_dates_to_iso.py data.csv
+
+
+Non-interactive, assume DMY when ambiguous:
+
+    python csv_dates_to_iso.py data.csv --no-prompt --assume DMY
+
+
+Force MDY for all date-like columns:
+
+    python csv_dates_to_iso.py data.csv --no-prompt --force-order MDY
+
+
+Convert with explicit output path:
+
+    python csv_dates_to_iso.py data.csv -o cleaned.csv
+
+
+## 📝 Notes
+
+* Timezones and times are preserved (→ full ISO-8601 with offset).
+* Pure dates are converted to YYYY-MM-DD.
+
+## 📄 License
+
+MIT License – see LICENSE for details.
