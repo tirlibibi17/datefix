@@ -18,17 +18,19 @@ A Python CLI tool to **normalize date columns in CSV files to ISO-8601 format** 
 
 ## 📦 Installation
 
-Clone the repo and install dependencies:
+### Option 1 (quickest): run a binary
 
-    git clone https://github.com/yourname/csv-date-normalizer.git
-    cd csv-date-normalizer
+Grab the binary from the release to the right. There are two binaries built with two different utilities (pyinstaller and nuitka). If one trips your antivirus (e.g. the nuitka one tripped Symantec on my work PC), try the other.
+
+### Option 2: download fix_date.py from the release and install dependencies
+
     pip install -r requirements.txt
 
 ## 🚀 Usage
 
 Basic (interactive):
 
-    python csv_dates_to_iso.py input.csv
+    python date_fix.py input.csv
 
 Output will be written to `input_iso.csv` by default.
 
