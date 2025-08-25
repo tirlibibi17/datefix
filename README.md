@@ -22,7 +22,7 @@ A Python CLI tool to **normalize date columns in CSV files to ISO-8601 format** 
 
 Grab the binary from the release to the right. There are two binaries built with two different utilities (pyinstaller and nuitka). If one trips your antivirus (e.g. the nuitka one tripped Symantec on my work PC), try the other.
 
-### Option 2: download fix_date.py from the release and install dependencies
+### Option 2: download fix_dates.py from the release and install dependencies
 
     pip install -r requirements.txt
 
@@ -30,15 +30,15 @@ Grab the binary from the release to the right. There are two binaries built with
 
 Basic (interactive):
 
-    python date_fix.py input.csv
+    python fix_dates.py input.csv
 
 Output will be written to `input_iso.csv` by default.
 
-    usage: csv_dates_to_iso.py [-h] [-o OUTPUT] [--encoding ENCODING]
-                               [--sample-rows SAMPLE_ROWS]
-                               [--no-prompt] [--assume {DMY,MDY,YMD}]
-                               [--force-order {DMY,MDY,YMD}]
-                               input
+    usage: fix_dates.py [-h] [-o OUTPUT] [--encoding ENCODING]
+                        [--sample-rows SAMPLE_ROWS]
+                        [--no-prompt] [--assume {DMY,MDY,YMD}]
+                        [--force-order {DMY,MDY,YMD}]
+                        input
 
 
     input → Path to CSV file
@@ -54,22 +54,22 @@ Output will be written to `input_iso.csv` by default.
 
 Interactive (asks if ambiguous):
 
-    python csv_dates_to_iso.py data.csv
+    python fix_dates.py data.csv
 
 
 Non-interactive, assume DMY when ambiguous:
 
-    python csv_dates_to_iso.py data.csv --no-prompt --assume DMY
+    python fix_dates.py data.csv --no-prompt --assume DMY
 
 
 Force MDY for all date-like columns:
 
-    python csv_dates_to_iso.py data.csv --no-prompt --force-order MDY
+    python fix_dates.py data.csv --no-prompt --force-order MDY
 
 
 Convert with explicit output path:
 
-    python csv_dates_to_iso.py data.csv -o cleaned.csv
+    python fix_dates.py data.csv -o cleaned.csv
 
 
 ## 📝 Notes
