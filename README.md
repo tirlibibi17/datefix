@@ -20,20 +20,17 @@ A Python CLI tool to **normalize date columns in CSV files to ISO-8601 format** 
 
 Clone the repo and install dependencies:
 
-```bash
-git clone https://github.com/yourname/csv-date-normalizer.git
-cd csv-date-normalizer
-pip install -r requirements.txt
+    git clone https://github.com/yourname/csv-date-normalizer.git
+    cd csv-date-normalizer
+    pip install -r requirements.txt
 
 ## 🚀 Usage
 
 Basic (interactive):
 
-python csv_dates_to_iso.py input.csv
+    python csv_dates_to_iso.py input.csv
 
-Output will be written to input_iso.csv by default.
-
-Options
+Output will be written to `input_iso.csv` by default.
 
     usage: csv_dates_to_iso.py [-h] [-o OUTPUT] [--encoding ENCODING]
                                [--sample-rows SAMPLE_ROWS]
